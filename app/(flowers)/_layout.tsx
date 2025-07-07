@@ -27,7 +27,7 @@ export default function FlowerLayout() {
       <Tab.Screen
         name="flower-2"
         options={{
-          title: "Flower type's list",
+          title: "Flower list",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="house.fill" color={color} />
           ),
