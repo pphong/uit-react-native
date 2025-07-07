@@ -25,6 +25,8 @@ export default function RootLayout() {
         <Stack.Screen name="(products)" options={{ headerShown: false }} />
         <Stack.Screen name="(navigations)" options={{ headerShown: false }} />
         <Stack.Screen name="(shops)" options={{ headerShown: false }} />
+        <Stack.Screen name="(params)" options={{ headerShown: false }} />
+        <Stack.Screen name="(flowers)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

@@ -25,7 +25,17 @@ export default function TabNavScreen() {
 
       <View style={styles.viewflexCol}>
         <Link href="/(navigations)/nav-1">
-          <ThemedText type="link">Screen 1</ThemedText>
+          <ThemedText type="link">Lesson 1</ThemedText>
+        </Link>
+      </View>
+      <View style={styles.viewflexCol}>
+        <Link href="/(params)/param-1">
+          <ThemedText type="link">Lesson 2</ThemedText>
+        </Link>
+      </View>
+      <View style={styles.viewflexCol}>
+        <Link href="/(flowers)/flower-1">
+          <ThemedText type="link">Lesson 3 (flower)</ThemedText>
         </Link>
       </View>
     </ParallaxScrollView>
