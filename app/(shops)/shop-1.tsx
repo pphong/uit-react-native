@@ -51,7 +51,7 @@ const PRODUCTS = [
   },
 ];
 
-export default function TabLogin2Screen() {
+export default function Shop1Screen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 

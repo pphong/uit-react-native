@@ -1,15 +1,8 @@
-import { IconSymbol } from "@/components/ui/IconSymbol";
 import { IMAGES } from "@/constants/Assets";
-import { Image } from "expo-image";
-import { useState } from "react";
 import {
   Dimensions,
-  FlatList,
-  Modal,
   StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+  View
 } from "react-native";
 
 const PRODUCTS = [
@@ -51,57 +44,12 @@ const PRODUCTS = [
   },
 ];
 
-export default function TabLogin2Screen() {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const openImage = (img: any) => {
-    setSelectedImage(img);
-    setModalVisible(true);
-  };
-
-  const renderItem = ({ item }: any) => {
-    return (
-      <TouchableOpacity
-        style={styles.card}
-        onPress={() => openImage(item.image)}
-      >
-        <IconSymbol
-          size={18}
-          color="white"
-          name="cart.badge.plus"
-          style={styles.cart}
-        />
-        <Image source={item.image} style={styles.image} resizeMode="contain" />
-        <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.price}>{item.price}</Text>
-      </TouchableOpacity>
-    );
-  };
+export default function Shop3Screen() {
 
   return (
     <>
       <View style={styles.container}>
-        <FlatList
-          data={PRODUCTS}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
-          contentContainerStyle={styles.list}
-        />
-
-        <Modal visible={modalVisible} transparent={false} animationType="fade">
-          <TouchableOpacity
-            style={styles.modalContainer}
-            onPress={() => setModalVisible(false)}
-          >
-            <Image
-              source={selectedImage}
-              style={styles.fullImage}
-              resizeMode="contain"
-            />
-          </TouchableOpacity>
-        </Modal>
+        Profile screen
       </View>
     </>
   );

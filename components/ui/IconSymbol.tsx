@@ -26,7 +26,8 @@ const MAPPING = {
   'arrow.backward': 'arrow-back-ios',
   'arrow.forward': 'arrow-forward-ios',
   'apple.logo': 'apple',
-  'cart.badge.plus': 'shopping-cart'
+  'cart.badge.plus': 'shopping-cart',
+  'arrow.backward.to.line':'keyboard-arrow-right'
 } as IconMapping;
 
 /**

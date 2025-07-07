@@ -23,6 +23,8 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="(auths)" options={{ headerShown: false }} />
         <Stack.Screen name="(products)" options={{ headerShown: false }} />
+        <Stack.Screen name="(navigations)" options={{ headerShown: false }} />
+        <Stack.Screen name="(shops)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
